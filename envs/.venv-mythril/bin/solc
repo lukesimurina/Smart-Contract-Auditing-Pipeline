@@ -1,0 +1,7 @@
+#!/home/luke/Documents/GitHub/Smart-Contract-Analyser/.venv-mythril/bin/python3
+import sys
+from solc_select.__main__ import solc
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(solc())
